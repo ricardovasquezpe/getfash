@@ -6548,7 +6548,7 @@ footer .btn-alter:active {
     cursor: pointer;
     text-decoration: none;
     margin: 0;
-    margin-right: 10px;
+    margin-right: 30px;
     filter: gray;
     filter: grayscale(100%);
 }
