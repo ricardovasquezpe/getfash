@@ -540,7 +540,7 @@ function initPageSliders(){
         $(".item-carousel").owlCarousel({
             autoPlay: 2500,
             //stopOnHover: true,
-            items: 3,
+            items: 5,
             itemsDesktop: [1199, 3],
             itemsTabletSmall: [768, 3],
             itemsMobile: [480, 1],
@@ -550,7 +550,6 @@ function initPageSliders(){
         
         // Item carousel
         $(".small-item-carousel").owlCarousel({
-            autoPlay: 2500,
             stopOnHover: true,
             items: 6,
             itemsDesktop: [1199, 4],
@@ -603,7 +602,7 @@ function initPageSliders(){
         $(".blog-posts-carousel").owlCarousel({
             autoPlay: 5000,
             stopOnHover: true,
-            items: 3,
+            items: 5,
             itemsDesktop: [1199, 3],
             itemsTabletSmall: [768, 2],
             itemsMobile: [480, 1],

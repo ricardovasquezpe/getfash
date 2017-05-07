@@ -6707,3 +6707,25 @@ footer .btn-alter:active {
 .owl-page.active span {
     background-color: #111111 !important;
 }
+
+/* NAV */
+.main-nav .inner-nav ul li a label {
+    display: none;
+}
+
+@media (max-width: 1048px) {  
+    .main-nav .inner-nav ul li a label {
+        display: inline-block;
+    }  
+    
+    .main-nav .inner-nav ul li a i.icon-responsive {
+        float: right;
+        position: relative;
+        top: 7.5px;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255, .1);
+        padding: 4px;
+        width: 22px;
+        text-align: center;
+    }
+}
