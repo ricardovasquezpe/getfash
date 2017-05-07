@@ -6612,6 +6612,13 @@ footer .btn-alter:active {
     color: #949494;
     font-size: 14px;
     margin-top: 20px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    height: 42px;
 }
 
 .panel-item .panel-body.panel-body__alter .btn,
