@@ -6758,6 +6758,21 @@ footer .btn-alter:active {
     color: #111111;
 }
 
+.section__title.article{
+    color: #5F5F5F;
+    font-size: 16px;
+}
+
+.article.bb-style {
+    border-bottom-color: #D8D8D8;
+}
+
+.article__cash {
+    margin: 25px 0;
+    font-size: 48px;
+    color: #5F5F5F;
+}
+
 /* BTN MORE */
 .btn-more,
 .btn-more:focus,
