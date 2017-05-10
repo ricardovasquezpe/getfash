@@ -6597,6 +6597,21 @@ footer .btn-alter:active {
     text-align: left;
 }
 
+.panel-item .panel-body.panel-body__article a {
+    text-transform: uppercase;
+    color: #9A9A9A;
+}
+
+.panel-item .panel-body.panel-body__article p,
+.panel-item .panel-body.panel-body__article p span {
+    color: #111111;
+    margin-right: 10px;
+}
+
+.panel-item .panel-body.panel-body__article p span:last-child {
+    margin-right: 0
+}
+
 .panel-item .panel-body a,
 .panel-item .panel-body a:hover,
 .panel-item .panel-body a:focus,
@@ -6695,6 +6710,30 @@ footer .btn-alter:active {
 
 .info-article span {
 
+}
+
+.article__head-text {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 10px;
+    color: #111111;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.article__head-link,
+.article__head-link:hover,
+.article__head-link:visited,
+.article__head-link:active,
+.article__head-link:focus {
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+    color: #919191;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-top: 4px;   
 }
 
 .col-image {
