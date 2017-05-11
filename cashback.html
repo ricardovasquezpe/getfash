@@ -125,11 +125,94 @@
                     <div class="col-md-6 mb-20">
                         <h3 class="section__title article bb-style">Cashback balance</h3>
                         <p class="article__cash">S$10.00</p>
+                        <button class="btn btn-mod btn-circle btn-medium">withdraw</button>
+                        <h5 class="article__title">Minimum withdrawal ammount: S$<span>20</span></h5>
+                        <p class="info-article info-article__alter"><small>Your cashback new purchases will take approx. 5-10 working days to appear here subjected to order confirmation by our brand partners.</small></p>
                     </div>
                     <div class="col-md-6 mb-20">
                         <h3 class="section__title article bb-style">total cashback earned</h3>
                         <p class="article__cash">S$30.00</p>
-                    </div>    
+                    </div> 
+                    <div class="col-md-12 mb-20 mt-30 form">
+                        <h3 class="section__title article bb-style mb-30">Cashback history</h3>
+                        <div class="input-group__button mb-30 bb-style">
+                            <input type="text" name="search" id="search" class="form-control" placeholder="search by brand or order no." maxlength="100">
+                            <button class="btn btn-mod btn-gray btn-small btn-round"><span class="fa fa-search"></span></button>
+                        </div>
+                        <table class="table table-hover table-style">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Brand</th>
+                                    <th>Order</th>
+                                    <th>Cashback Earned</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Feb 2017</td>
+                                    <td>Ministry of Retail</td>
+                                    <td>#123456</td>
+                                    <td>S$3.50</td>
+                                    <td class="color-pending">Pending</td>
+                                </tr>
+                                <tr>
+                                    <td>1 Feb 2017</td>
+                                    <td>Ministry of Retail</td>
+                                    <td>#123456</td>
+                                    <td>S$3.50</td>
+                                    <td class="color-approved">Approved</td>
+                                </tr>
+                                <tr>
+                                    <td>1 Jan 2017</td>
+                                    <td>Withdrawing S$23.50</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td class="color-progress">In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>1 Jan 2017</td>
+                                    <td>Withdrawing S$23.50</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td class="color-completed">Complete</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-20 mt-40 form p-0">
+                        <h3 class="section__title article bb-style mb-30">Withdrawal history</h3>
+                        <table class="table table-hover table-style">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Withdrawal Amount</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 Jan 2017</td>
+                                    <td>S$1,000,000</td>
+                                    <td class="color-pending">Pending</td>
+                                </tr>
+                                <tr>
+                                    <td>1 Jan 2017</td>
+                                    <td>S$1,000,000</td>
+                                    <td class="color-completed">completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 form text-left">
+                        <h4>Need help with your cashback?</h4>
+                        <p class="color-p">Send us a message and we'll be of assistance</p>
+                        <textarea name="message" id="message" class="input-md form-control mb-20" rows="8" placeholder="MEssage" maxlength="400"></textarea>
+                        <label class="label-icon"><span class="fa fa-info-circle" aria-hidden="true"></span> All the fields are required</label>
+                        <button class="btn btn-mod btn-medium btn-round pull-right" type="button" data-toggle="modal" data-target="#modalEnterBankDetails">Submit message</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -170,6 +253,36 @@
                  <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
              </div>                 
         </footer>
+
+        <div class="modal fade in" id="modalEnterBankDetails" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2 mb-50 text-center">
+                                <button class="btn btn-mod btn-border btn-circle btn-medium">withdraw to bank</button>
+                            </div>
+                            <div class="col-xs-4 text-center mb-50">
+                                <button class="btn btn-mod btn-border btn-circle btn-medium">withdraw to paypal</button>
+                            </div>
+                            <div class="form col-xs-6 col-xs-offset-3 text-left">
+                                <select class="input-md form-control mb-20">
+                                    <option>One</option>
+                                    <option>Two</option>
+                                    <option>Three</option>
+                                </select>
+                                <input type="text" name="yourName" id="yourName" class="input-md form-control mb-20" placeholder="Your name (as per bank  acct)" maxlength="100">
+                                <input type="text" name="accountNumber" id="accountNumber" class="input-md form-control mb-30" placeholder="Account number" maxlength="100">
+                                <button class="btn btn-mod btn-medium btn-round" style="width: 100%">Request withdrawal to bank</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script type="text/javascript" src="public/js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="public/js/jquery.easing.1.3.js"></script>
