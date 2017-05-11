@@ -6936,3 +6936,55 @@ footer .btn-alter:active,
     margin-bottom: 0;
     margin-top: 10px;
 }
+
+/* MODAL */
+.modal {
+    padding-right: 0 !important
+}
+
+.modal-content {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.modal-header {
+    background-color: transparent;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.modal-header .close {
+    color: #B0B1B1;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.modal-body {
+    background-color: #FFFFFF;
+    padding: 50px 15px;
+}
+
+.modal-backdrop.in{
+    filter: alpha(opacity=75);
+    opacity: .75;
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 750px;
+        margin: 40px auto;
+    }
+}
+
+/* BUTTONS */
+.inactive {
+    border-color: transparent !important;
+}
+
+.btn-mod__padding {
+    padding: 8px 15px !important;
+    letter-spacing: 1px;
+}
