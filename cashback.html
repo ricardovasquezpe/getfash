@@ -125,7 +125,7 @@
                     <div class="col-md-6 mb-20">
                         <h3 class="section__title article bb-style">Cashback balance</h3>
                         <p class="article__cash">S$10.00</p>
-                        <button class="btn btn-mod btn-circle btn-medium">withdraw</button>
+                        <button class="btn btn-mod btn-circle btn-medium" data-toggle="modal" data-target="#modalCashBackBalance">withdraw</button>
                         <h5 class="article__title">Minimum withdrawal ammount: S$<span>20</span></h5>
                         <p class="info-article info-article__alter"><small>Your cashback new purchases will take approx. 5-10 working days to appear here subjected to order confirmation by our brand partners.</small></p>
                     </div>
@@ -211,7 +211,7 @@
                         <p class="color-p">Send us a message and we'll be of assistance</p>
                         <textarea name="message" id="message" class="input-md form-control mb-20" rows="8" placeholder="MEssage" maxlength="400"></textarea>
                         <label class="label-icon"><span class="fa fa-info-circle" aria-hidden="true"></span> All the fields are required</label>
-                        <button class="btn btn-mod btn-medium btn-round pull-right" type="button" data-toggle="modal" data-target="#modalEnterBankDetails">Submit message</button>
+                        <button class="btn btn-mod btn-medium btn-round pull-right" type="button" >Submit message</button>
                     </div>
                 </div>
             </div>
@@ -266,7 +266,7 @@
                                 <button class="btn btn-mod btn-border btn-circle btn-medium btn-mod__padding">withdraw to bank</button>
                             </div>
                             <div class="col-md-5 mb-50 text-center">
-                                <button class="btn btn-mod btn-border inactive btn-circle btn-medium btn-mod__padding">withdraw to paypal</button>
+                                <button class="btn btn-mod btn-border inactive btn-circle btn-medium btn-mod__padding" data-dismiss="modal" onclick="setTimeout(function(){ $('#modalWithdrawToPaypal').modal('toggle') }, 750);">withdraw to paypal</button>
                             </div>
                             <div class="form col-md-6 col-md-offset-3 text-left">
                                 <select class="input-md form-control mb-20">
@@ -277,6 +277,71 @@
                                 <input type="text" name="yourName" id="yourName" class="input-md form-control mb-10" placeholder="Your name (as per bank  acct)" maxlength="100">
                                 <input type="text" name="accountNumber" id="accountNumber" class="input-md form-control mb-30" placeholder="Account number" maxlength="100">
                                 <button class="btn btn-mod btn-medium btn-round" style="width: 100%">Request withdrawal to bank</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in" id="modalWithdrawToPaypal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 mb-20 text-center">
+                                <h4 class="text-uppercase text-center mb-0 mt-0">Withdraw to paypal</h4>
+                            </div>
+                            <div class="form col-md-6 col-md-offset-3 text-left">
+                                <input type="text" name="yourEmail" id="yourEmail" class="input-md form-control mb-10" placeholder="Your paypal email address" maxlength="100">
+                                <button class="btn btn-mod btn-medium btn-round" style="width: 100%">Request withdrawal to paypal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in" id="modalThankYou" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 mb-20 text-center">
+                                <h4 class="text-center mb-0 mt-0">Thank you. We are processing you withdrawal.</h4>
+                            </div>
+                            <div class="form col-md-6 col-md-offset-3 text-center">                                
+                                <button class="btn btn-mod btn-medium btn-round">Okay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade in" id="modalCashBackBalance" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form col-md-6 col-md-offset-3 text-center"> 
+                                <h3 class="section__title article bb-style">total cashback earned</h3>
+                                <p class="article__cash">S$30.00</p>
+                                <input type="text" name="yourAmount" id="yourAmount" class="input-lg text-center form-control mb-0" placeholder="withdrawal Amount" maxlength="100">
+                                <h5 class="article__title mb-30">Minimum withdrawal ammount: S$<span>20</span></h5>
+                                <button class="btn btn-mod btn-circle btn-medium">withdraw</button>
+                                <div class="alert error mn-0">
+                                    <i class="fa fa-lg  fa-times-circle"></i> The minimun withdrawal amount is S$20
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,7 +366,7 @@
         <script type="text/javascript" src="public/js/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="public/js/jquery.magnific-popup.min.js"></script>
         <script type="text/javascript" src="public/js/jquery.simple-text-rotator.min.js"></script>
-        <script type="text/javascript" src="public/js/article.js"></script>
+        <script type="text/javascript" src="public/js/init.js"></script>
         <script type="text/javascript" src="public/js/jquery.ajaxchimp.min.js"></script>  
     </body>
 </html>

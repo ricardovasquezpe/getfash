@@ -6979,6 +6979,18 @@ footer .btn-alter:active,
     }
 }
 
+.modal .alert {
+    background: transparent !important;
+    color: #E43132 !important;
+    padding: 0 !important;
+    border: none;
+}
+
+.modal .article__cash {
+    margin: 10px 0 20px 0;
+    font-size: 36px;
+}
+
 /* BUTTONS */
 .inactive {
     border-color: transparent !important;
